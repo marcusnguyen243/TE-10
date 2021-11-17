@@ -61,56 +61,14 @@
       });
       
       
-  
+
       
- var obj4;
-      loader.load("orbit2.gltf", function (gltf) {
-        obj4 = gltf.scene;
-        obj4.scale.set(1,1,1);
-        obj4.position.y =10;
-        obj4.position.z =15;
-        obj4.position.x =-10;
-        
-        
-      scene.add(gltf.scene);
-      });
+
       
       
-  var obj5;
-      loader.load("orbit1.gltf", function (gltf) {
-        obj5 = gltf.scene;
-        obj5.scale.set(.6,.6,.6);
-        obj5.position.y =20;
-        obj5.position.z =20;
-        obj5.position.x =2;
-        //obj3.position.x =-5;
-      scene.add(gltf.scene);
-      });
-      
-      
-   var obj6;
-      loader.load("orbit2.gltf", function (gltf) {
-        obj6 = gltf.scene;
-        obj6.scale.set(.6,.6,.6);
-        obj6.position.y =5;
-        obj6.position.z =15;
-        obj6.position.x =-5;
-        
-              scene.add(gltf.scene);
-      });
+
 
         
-     var obj7;
-      loader.load("orbit1.gltf", function (gltf) {
-        obj7 = gltf.scene;
-        obj7.scale.set(.6,.6,.6);
-        obj7.position.y =5;
-        obj7.position.z =25;
-        obj7.position.x =5;
-        
-        
-      scene.add(gltf.scene);
-      });
 
       scene.background = new THREE.Color(0xffffff);
       var light = new THREE.HemisphereLight(0xffffff, 0x000000, 2);
@@ -121,17 +79,6 @@
         obj.rotation.y += 0.005;
         obj3.rotation.y += 0.005;
         obj3.position.z +=.001;
-        obj4.rotation.y += 0.0164;
-        obj4.position.z +=.003;
-        obj5.rotation.y += 0.0014;
-        obj5.position.z +=.01;
-        obj6.rotation.y += 0.0084;
-        obj6.position.z +=.003;
-        obj7.rotation.y += 0.0054;
-        obj7.position.x +=.01;
-       if (obj5.position.z > 10){
-        obj5.position.z = -30; 
-       }
         renderer.render(scene, camera);
       }
 
