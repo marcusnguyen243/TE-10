@@ -49,25 +49,17 @@
 
 
       
- var obj3;
+ var obj2;
       loader.load("orbit1.gltf", function (gltf) {
-        obj3 = gltf.scene;
-        obj3.scale.set(1.2,1.2,1.2);
-        obj3.position.y =10;
-        obj3.position.z =20;
-        obj3.position.x =10;
+        obj2 = gltf.scene;
+        obj2.scale.set(1.2,1.2,1.2);
+        obj2.position.y =10;
+        obj2.position.z =20;
+        obj2.position.x =-5;
         //obj3.position.x =-5;
       scene.add(gltf.scene);
       });
       
-      
-
-      
-
-      
-      
-
-
         
 
       scene.background = new THREE.Color(0xffffff);
@@ -78,7 +70,7 @@
         requestAnimationFrame(animate);
         obj.rotation.y += 0.005;
         obj3.rotation.y += 0.005;
-        obj3.position.z +=.001;
+        obj3.position.z +=.01;
         renderer.render(scene, camera);
       }
 
