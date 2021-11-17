@@ -1,0 +1,30 @@
+html,
+body {
+  font-family: "Source Code Pro", monospace;
+  margin: auto;
+  display: block;
+  left-padding: 200px;
+  background-color: black;
+}
+
+.center {
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  color:white;
+}
+
+.statementp {
+  margin: auto;
+  width:50%;
+  text-align: center;
+  color:white;
+  border: 1px solid white;
+  padding: 30px;
+}
+
+ a {
+ display: inline-block;
+ padding: 10px; 
+        
+  }
